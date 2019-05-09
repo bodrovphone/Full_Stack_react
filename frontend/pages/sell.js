@@ -6,9 +6,6 @@ export default function Sell() {
     <div>
       Sell
       <br/>
-      <Link href="/">
-        <a>Home</a>
-      </Link>
     </div>
-  )
+  );
 }

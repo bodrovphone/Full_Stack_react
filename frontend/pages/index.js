@@ -5,9 +5,7 @@ export default function Home() {
   return (
     <div>
       Hey
-      <Link href="/sell">
-        <a>Sell</a>
-      </Link>
+      <br/>
     </div>
   )
 }
