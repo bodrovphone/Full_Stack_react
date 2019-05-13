@@ -3,20 +3,20 @@ import NavStyles from './styles/NavStyles';
 
 const Nav = () => (
   <NavStyles>
-    <Link>
-      <a href="/items">Items</a>
+    <Link href="/items">
+      <a>Items</a>
     </Link>
-    <Link>
-      <a href="/sell">Sell</a>
+    <Link href="/sell">
+      <a>Sell</a>
     </Link>
-    <Link>
-      <a href="/signup">Signup</a>
+    <Link href="/signup">
+      <a>Signup</a>
     </Link>
-    <Link>
-      <a href="/orders">Orders</a>
+    <Link href="/orders">
+      <a>Orders</a>
     </Link>
-    <Link>
-      <a href="/me">Account</a>
+    <Link href="/me">
+      <a>Account</a>
     </Link>
   </NavStyles>
 );
