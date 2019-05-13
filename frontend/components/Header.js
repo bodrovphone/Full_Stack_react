@@ -2,6 +2,22 @@ import React from 'react';
 import styled from 'styled-components';
 import Nav from './Nav';
 import Link from 'next/link';
+import Router from 'next/router';
+import NProgress from 'nprogress';
+
+const routeChangeStart = url => {
+  NProgress.start();
+};
+const routeChangeComplete = url => {
+  NProgress.done();
+};
+const routeChangeError = url => {
+  NProgress.done();  
+};
+
+Router.events.on('routeChangeStart', routeChangeStart);
+Router.events.on('routeChangeError', routeChangeError);
+Router.events.on('routeChangeComplete', routeChangeComplete);
 
 const Logo = styled.h1`
   font-size: 4rem;
