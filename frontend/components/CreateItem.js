@@ -48,7 +48,7 @@ export default class CreateItem extends Component {
     data.append('file', files[0]);
     data.append('upload_preset', 'sickfits');
 
-    const res = await fetch('https://res.cloudinary.com/diluu26id/image/upload', {
+    const res = await fetch('https://api.cloudinary.com/v1_1/diluu26id/image/upload', {
       method: 'POST',
        body: data
     });
@@ -58,7 +58,7 @@ export default class CreateItem extends Component {
     console.log(file);
     
     this.setState({
-      iamge: file.secure_url,
+      image: file.secure_url,
       largeIamge: file.eager[0].secure_url
     });
   }
@@ -89,7 +89,7 @@ export default class CreateItem extends Component {
                   onChange={this.uploadFile}
                   />
                 </label>
-
+                {this.state.image && <img src={this.state.image} alt="Upload Preview" />}
                 <label htmlFor="title">
                   Title
                   <input type="text" id="title" name="title" 
