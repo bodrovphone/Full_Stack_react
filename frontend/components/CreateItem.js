@@ -85,7 +85,7 @@ export default class CreateItem extends Component {
                 <label htmlFor="file">
                   file
                   <input type="file" id="file" name="file" 
-                  placeholder="Upload an image" required
+                  placeholder="Upload an image"
                   onChange={this.uploadFile}
                   />
                 </label>
