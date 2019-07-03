@@ -1,11 +1,11 @@
-import React from 'react';
-import Items from '../components/Items';
+import React from "react";
+import Items from "../components/Items";
 
-export default function Home() {
+export default function Home(props) {
   return (
     <div>
-      <Items />
-      <br/>
+      <Items page={Number(props.query.page) || 1} />
+      <br />
     </div>
-  )
+  );
 }
