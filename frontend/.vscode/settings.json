@@ -3,6 +3,28 @@
     "titleBar.activeForeground": "#000",
     "titleBar.inactiveForeground": "#000000CC",
     "titleBar.activeBackground": "#FFC600",
-    "titleBar.inactiveBackground": "#FFC600CC"
+    "titleBar.inactiveBackground": "#FFC600CC",
+    "workbench.colorTheme": "Monokai Dimmed",
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "editor.renderWhitespace": "boundary",
+    "editor.tabSize": 2,
+    "window.zoomLevel": 0,
+    "files.associations": {
+      "*.js": "javascriptreact"
+    },
+    "editor.accessibilitySupport": "off",
+    "[javascriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.settings.editor": "json",
+    "extensions.autoCheckUpdates": true,
+    "workbench.sideBar.location": "left",
+    "editor.cursorSmoothCaretAnimation": true,
+    "breadcrumbs.enabled": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "editor.formatOnSave": true,
+    "window.menuBarVisibility": "toggle",
+    "workbench.editor.enablePreview": false
   }
 }
